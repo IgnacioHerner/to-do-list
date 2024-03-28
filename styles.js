@@ -57,6 +57,8 @@ import { StyleSheet } from "react-native";
     },
     modalDetailContainer: {
         paddingVertical: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     modalTitleText: {
         fontSize: 14,
