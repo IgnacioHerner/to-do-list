@@ -48,7 +48,7 @@ export default function App() {
 				<Button
 					disabled={!task}
 					title="Add"
-					color="#9A848F"
+					color="#434532"
 					onPress={onHandleTask}
 				/>
 			</View>

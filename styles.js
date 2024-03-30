@@ -14,7 +14,7 @@ import { StyleSheet } from "react-native";
     input: {
         width: '80%',
         borderBottomWidth: 1,
-        borderColor: '#9A848F',
+        borderColor: '#434532',
     },
     listContainer:{
         marginHorizontal: 20,
@@ -27,7 +27,7 @@ import { StyleSheet } from "react-native";
     },
     listItemContainer:{
         paddingVertical: 20,
-        backgroundColor: '#9A848F',
+        backgroundColor: '#434532',
         borderRadius: 5,
         shadowColor: "#000",
         marginVertical: 5,
