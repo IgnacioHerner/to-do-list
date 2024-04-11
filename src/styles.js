@@ -5,10 +5,6 @@ import { StyleSheet } from "react-native";
       flex: 1,
       backgroundColor: '#F6F4F5'
     },
-    listContainer:{
-        marginHorizontal: 20,
-        paddingTop: 20,
-    },
     listTitle:{
         fontSize: 18,
         fontWeight: 'bold',

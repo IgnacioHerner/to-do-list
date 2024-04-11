@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Text, TextInput, View, Button, FlatList, Modal, TouchableOpacity } from "react-native";
+import { Text, View} from "react-native";
 import { styles } from "./styles.js";
-import { AddItem, TaskItem, ModalItem } from "./components/index";
+import { AddItem, TaskItem, ModalItem, ListItem } from "./components/index";
 
 export default function App() {
 	const [task, setTask] = useState("");
@@ -43,12 +43,7 @@ export default function App() {
 				<Text style={styles.listTitle}>To do List</Text>
 			</View>
 			<AddItem task={task} onHandleTask={onHandleTask} onHandleChange={onHandleChange}/>
-			<FlatList
-				style={styles.listContainer}
-				data={taskList}
-				renderItem={renderItem}
-				keyExtractor={(item) => item.id.toString()}
-			/>
+			<ListItem taskList={taskList} renderItem={renderItem}/>
 			<ModalItem modalVisible={modalVisible} selectedTask={selectedTask} onHandleCancel={onHandleCancel} onHandleDeleteItem={onHandleDeleteItem}/>
 		</View>
 	);
